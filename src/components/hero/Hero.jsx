@@ -2,7 +2,11 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className="hero">
+        <h1>Our Best Headphones Yet.</h1>
+        <p>QuietComfort 35 Wireless Headphones</p>
+        <button className="cta">VIEW DETAILS</button>
+    </div>
   )
 }
 

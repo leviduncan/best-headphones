@@ -1,8 +1,8 @@
-import React from 'react'
-
 const Header = () => {
   return (
-    <div>Header</div>
+    <header>
+        <div className="brand">BRAND</div>
+    </header>
   )
 }
 
