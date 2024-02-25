@@ -27,11 +27,52 @@ header .brand {
   font-weight: 900;
 }
 
+/* button */
+
+.light {
+  background: #fefefe;
+  color: #141414;
+}
+
+.dark {
+  background: #141414;
+  color: #fefefe;
+}
+
+.btn {
+  display: inline-block;
+  font-size: .6rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: no-wrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  width: 150px;
+  line-height: 1rem;
+  border-radius: 5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+
+/* hero */
+
 .hero {
   background-color: #000;
   color: #fff;
   text-align: center;
   padding-top: 10px;
+  padding-bottom: 80px;
+  letter-spacing: .2rem;
+  height: 350px;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -50,8 +91,96 @@ header .brand {
   padding: 40px 0 20px;
 }
 
+.hero .hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.hero .bg-image img {
+  width: 100vw;
+}
+
+.hero .bg-image {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/*Wirelessly*/
+
+.wirelessly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wirelessly p {
+  font-size: 14px;
+}
+
+.wirelessly .title {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+}
+
+.wirelessly .title h2 {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+}
+
+.wirelessly .title h3 {
+  width: 250px;
+  line-height: 1.4rem;
+  margin: 0 auto;
+}
+
+.wirelessly .content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.wirelessly .content img{
+  width: 100%;
+}
+
+.wirelessly .content .cta{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wirelessly .content .cta .cta-title{
+  padding: 20px 0;
+}
+
+.wirelessly .content .cta .cta-body{
+  padding: 0 0 20px;
+}
+
 @media (min-width: 768px) {
+  .hero {
+    height: 460px;
+  }
   .hero p {
     font-size: 1rem;
+  }
+  
+  .hero .bg-image img {
+    width: 100%;
+    margin: unset;
+  }
+  .wirelessly {
+
+  }
+  .wirelessly .content {
+    flex-direction: row;
   }
 }
